@@ -20,7 +20,12 @@ const fs = require('fs');
 // })
 
 
-fs.rename("hey.txt","hello.txt", function (err) {
-    if (err) console.log(err)
-        else console.log("done");
-})
+// fs.rename("hey.txt","hello.txt", function (err) {
+//     if (err) console.log(err)
+//         else console.log("done");
+// })
+
+fs.copyFile("hello.txt", "./copy/chacha.txt", function (err) {
+    if (err) console.error(err);
+    else console.log("done");
+});
