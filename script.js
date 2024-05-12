@@ -5,6 +5,7 @@ const fs = require('fs');
 // appendFile
 // unlink
 // rename
+// rmdir
 
 
 // fs.writeFile("hey.txt","hey hello kaisa ho ", function(err){
@@ -25,13 +26,21 @@ const fs = require('fs');
 //         else console.log("done");
 // })
 
+
+
 // fs.copyFile("hello.txt", "./copy/chacha.txt", function (err) {
 //     if (err) console.error(err);
 //     else console.log("done");
 // });
 
 
-fs.unlink("hello.txt", function (err) {
-    if (err) console.error(err);
-    else console.log("remove");
-});
+// fs.unlink("hello.txt", function (err) {
+//     if (err) console.error(err);
+//     else console.log("remove");
+// });
+
+
+// fs.rmdir("./copy",{recursive: true}, function (err) {
+//     if (err) console.error(err);
+//     else console.log("done");
+// });
