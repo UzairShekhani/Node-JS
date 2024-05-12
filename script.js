@@ -25,7 +25,13 @@ const fs = require('fs');
 //         else console.log("done");
 // })
 
-fs.copyFile("hello.txt", "./copy/chacha.txt", function (err) {
+// fs.copyFile("hello.txt", "./copy/chacha.txt", function (err) {
+//     if (err) console.error(err);
+//     else console.log("done");
+// });
+
+
+fs.unlink("hello.txt", function (err) {
     if (err) console.error(err);
-    else console.log("done");
+    else console.log("remove");
 });
